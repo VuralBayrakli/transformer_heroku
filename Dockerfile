@@ -6,6 +6,7 @@ WORKDIR /transformer_heroku
 
 # Uygulamanın gereksinimlerini yükle
 # requirements.txt dosyanızın olduğundan emin olun
+COPY init.sh /transformer_heroku
 COPY requirements.txt /.requirements.txt
 RUN pip install -r /.requirements.txt
 
@@ -13,4 +14,4 @@ RUN pip install -r /.requirements.txt
 COPY . /transformer_heroku
 
 # Uygulamanı başlatmak için kullanılacak komut
-CMD ["python", "myproject/manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["/transformer_heroku/init.sh"]

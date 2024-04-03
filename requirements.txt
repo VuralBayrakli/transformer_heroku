@@ -13,7 +13,6 @@ cloudpathlib==0.16.0
 colorama==0.4.6
 confection==0.1.4
 Django==4.2.11
-en_core_web_sm
 fastjsonschema==2.19.1
 filelock==3.13.1
 frozenlist==1.4.1
