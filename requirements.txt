@@ -38,10 +38,9 @@ spacy==3.7.4
 spacy_legacy==3.0.12
 spacy_loggers==1.0.5
 sqlparse==0.4.4
-srsly==2.4.8
 sympy==1.12
-torch==2.10.0+cpu
-torchtext==0.17.0
+torch
+torchtext
 tqdm==4.64.1
 typing_extensions==4.10.0
 
