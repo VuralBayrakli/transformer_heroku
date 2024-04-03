@@ -1,0 +1,8 @@
+build:
+  docker:
+    web: Dockerfile
+    worker: transformer_heroku/Dockerfile
+release:
+  image: worker
+  command:
+    - ./init.sh
